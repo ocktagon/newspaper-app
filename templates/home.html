@@ -3,6 +3,14 @@
 {% block title %}Home{% endblock title %}
 
 {% block content %}
+<div class="jumbotron">
+  <h1 class="display-4">Newspaper app</h1>
+  <p class="lead">A Newspaper site built with Django</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">View All Articles</a>
+  </p>
+</div>
+<!--
 {% if user.is_authenticated %}
 Hi {{ user.username }}!
 <p><a href="{% url 'logout' %}">Log Out</a></p>
@@ -10,5 +18,5 @@ Hi {{ user.username }}!
 <p> You are not logged in</p>
 <p><a href="{% url 'login' %}">Log In</a></p>
 <p><a href="{% url 'signup' %}">Sign Up</a></p>
-{% endif %}
+{% endif %} -->
 {% endblock content %}
